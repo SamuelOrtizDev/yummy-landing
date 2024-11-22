@@ -1,0 +1,169 @@
+---
+import Character from "../components/Character.astro";
+import Layout from "../layouts/Layout.astro";
+import { CoreValues } from "../components/CoreValues";
+import LogoFull from '../components/LogoFull.astro'
+---
+
+<Layout title="Yummy Design System">
+	<section
+		class="flex flex-col justify-center items-center gap-4 text-white bg-gradient-to-tr from-[#FF787B] to-[#EAA643] min-h-[80dvh] relative overflow-hidden"
+	>
+		<h1 class="text-6xl font-extrabold text-center max-w-4xl">
+			Empower Your Chances To Get Tasty With Yummy
+		</h1>
+		<p>The new Rappi design system</p>
+		<a target="_blank" href="https://zeroheight.com/8b8b45d30" class="rounded-md px-4 py-2 shadow-sm bg-red font-medium hover:brightness-150">See Docs</a>
+		<span class="absolute -right-10 bottom-4 -scale-x-100 z-10">
+			<Character />
+		</span>
+
+		<img class="absolute -right-16 bottom-0" src="pattern1.png" alt="" />
+		<img
+			class="absolute -left-10 w-[400px] h-auto"
+			src="pattern2.png"
+			alt=""
+		/>
+	</section>
+
+	<section class="-mt-[180px] z-20 px-[64px]">
+		<CoreValues />
+	</section>
+
+	<section class="px-[64px]">
+		<h2 class="font-bold text-6xl">Colors</h2>
+		<article class="grid grid-cols-1 md:grid-cols-[500px_1fr] gap-24 mt-12">
+			<div
+				class="grid grid-cols-3 grid-rows-[220px_220px] gap-4 text-white"
+			>
+				<span class="flex p-4 rounded-lg bg-green items-end col-span-3"
+					>#29D884</span
+				>
+				<span class="flex p-4 rounded-lg bg-red items-end col-span-2"
+					>#FF3C35</span
+				>
+				<span class="flex p-4 rounded-lg bg-yellow items-end"
+					>#EAA643</span
+				>
+			</div>
+
+			<div class="flex flex-col gap-12 max-w-2xl">
+				<span class="flex flex-col gap-2">
+					<strong class="font-bold text-xl text-red"
+						>Tangerine Dream</strong
+					>
+					<p>
+						Tangerine Dream is a vibrant hue that embodies Rappi’s
+						energetic and fresh brand identity. It’s ideal for
+						drawing attention to key elements like call-to-action
+						buttons and highlighted sections, delivering a sense of
+						joy and approachability to the users.
+					</p>
+				</span>
+				<span class="flex flex-col gap-2">
+					<strong class="font-bold text-xl text-green"
+						>Verdant Glow</strong
+					>
+					<p>
+						Verdant Glow combines warmth with a soft, natural
+						touch, evoking a sense of renewal and freshness. This
+						color is perfect for highlighting product features,
+						promotions, and success messages, adding a friendly and
+						optimistic tone to the user experience.
+					</p>
+				</span>
+				<span class="flex flex-col gap-2">
+					<strong class="font-bold text-xl text-yellow"
+						>Solar Pulse</strong
+					>
+					<p>
+						With its soft radiance, Golden Pulse evokes the warmth
+						of a sunset, making it ideal for elements that seek to
+						create a welcoming and vibrant atmosphere. This color is
+						used in backgrounds and subtle details, enhancing the
+						visual experience while fostering a positive emotional
+						connection with users.
+					</p>
+				</span>
+			</div>
+		</article>
+	</section>
+
+	<section class="px-[64px]">
+		<h2 class="font-bold text-6xl">Typography</h2>
+
+		<article class="flex items-center justify-center gap-72">
+			<div class="relative">
+				<p class="text-[20rem] opacity-10">Aa</p>
+				<p class="absolute top-56 right-0 text-[4rem]">Poppins</p>
+			</div>
+
+			<div class="grid grid-cols-[230px_230px]">
+				<span class="flex flex-col gap-4">
+					<p class="text-[28px]">Heading 1</p>
+					<p class="text-[24px]">Heading 2</p>
+					<p class="text-[20px]">Heading 3</p>
+					<p class="text-[18px]">Lead Text</p>
+					<p class="text-[14px]">Base</p>
+					<p class="text-[11px]">Caption</p>
+				</span>
+				<span class="flex flex-col gap-4">
+					<p class="text-[28px]">28px</p>
+					<p class="text-[24px]">24px</p>
+					<p class="text-[20px]">20px</p>
+					<p class="text-[18px]">18px</p>
+					<p class="text-[14px]">14px</p>
+					<p class="text-[11px]">11px</p>
+				</span>
+			</div>
+		</article>
+	</section>
+
+	<section class="px-[64px] bg-[#FFD79C] py-12 relative">
+		<h2 class="font-bold text-6xl">Icons</h2>
+
+		<div class="mt-12 relative">
+			<img src="Icons.png" class="w-full h-auto" alt="" />
+			<strong class="absolute right-24 top-24 text-5xl text-[#9E5E00]"
+				>Around 39 Icons</strong
+			>
+		</div>
+
+		<span class="absolute left-10 -top-56">
+			<Character />
+		</span>
+	</section>
+
+	<section class="px-[64px] relative">
+		<h2 class="font-bold text-6xl text-center">Components</h2>
+
+		<article class="flex justify-center gap-24 items-center mt-12">
+			<img class="w-auto h-[500px]" src="components.png" alt="" />
+
+			<div class="text-xl max-w-md">
+				<p class="font-bold">
+					About 92 components for your designs segmented in:
+				</p>
+
+				<ul class="flex flex-col gap-2 mt-4 list-disc">
+					<li>Buttons</li>
+					<li>Inputs</li>
+					<li>Cards</li>
+					<li>Helpers</li>
+					<li>Navigation</li>
+					<li>Common Layouts</li>
+				</ul>
+			</div>
+		</article>
+
+		<span class="absolute -right-24 -bottom-24 -scale-x-100 -rotate-45">
+			<Character />
+		</span>
+	</section>
+
+	<section class="px-[64px] flex items-center py-16 flex-col gap-4 bg-[#F8F8FA] text-center">
+		<LogoFull/>
+		<strong class="font-medium text-4xl">And Much More To Discover</strong>
+		<a href="https://zeroheight.com/8b8b45d30" target="_blank" class="rounded-md px-4 py-2 shadow-sm bg-red text-white font-medium mt-12 hover:brightness-200">See Docs</a>
+	</section>
+</Layout>

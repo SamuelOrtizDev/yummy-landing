@@ -1,0 +1,23 @@
+---
+import Logo from './Logo.astro'
+
+const navOptions = [
+    'Brand Values',
+    'Colors',
+    'Typography',
+    'Icons',
+    'Illustrations',
+    'Components'
+]
+---
+
+<header class="flex items-center justify-between px-[64px] pt-4 w-full absolute top-0 text-white z-50">
+    <Logo/>
+    <nav class="flex gap-8">
+        {
+            navOptions.map(option => (
+                <a href="">{option}</a>
+            ))
+        }
+    </nav>
+</header>
