@@ -2,13 +2,31 @@
 import Logo from './Logo.astro'
 
 const navOptions = [
-    'Brand Values',
-    'Colors',
-    'Typography',
-    'Icons',
-    'Illustrations',
-    'Components'
-]
+        {
+            title: 'Brand Values',
+            href: '#values-section'
+        },
+        {
+            title: 'Overview',
+            href: '#overview-section'
+        },
+        {
+            title: 'Typography',
+            href: '#typo-section'
+        },
+        {
+            title: 'Icons',
+            href: '#icon-section'
+        },
+        {
+            title: 'Components',
+            href: '#components-section'
+        },
+        {
+            title: 'Team Members',
+            href: '#team-section'
+        },
+        ]
 ---
 
 <header class="flex items-center justify-between px-[64px] pt-4 w-full absolute top-0 text-white z-50">
@@ -16,7 +34,7 @@ const navOptions = [
     <nav class="flex gap-8">
         {
             navOptions.map(option => (
-                <a href="">{option}</a>
+                <a class="transition-colors hover:text-green" href={option.href}>{option.title}</a>
             ))
         }
     </nav>
