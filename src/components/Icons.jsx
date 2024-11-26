@@ -30,7 +30,7 @@ export const Value2 = () => (
 export const Value3 = () => (
     <svg width="83" height="84" viewBox="0 0 83 84" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M36.0484 3.19911C39.4144 1.22386 43.5856 1.22386 46.9517 3.1991L71.745 17.7482C75.0406 19.6821 77.065 23.2173 77.065 27.0384V56.4419C77.065 60.263 75.0406 63.7982 71.745 65.7321L46.9517 80.2812C43.5856 82.2565 39.4144 82.2565 36.0484 80.2812L11.2551 65.7321C7.95943 63.7982 5.93503 60.263 5.93503 56.4419V27.0384C5.93503 23.2173 7.95942 19.6821 11.255 17.7482L36.0484 3.19911Z" fill="#FF3C35" />
-        <rect x="25" y="25" width="33" height="33" rx="13" stroke="white" stroke-width="4" />
+        <rect x="25" y="25" width="33" height="33" rx="13" stroke="white" strokeWidth="4" />
     </svg>
 
 )
@@ -46,4 +46,12 @@ export const Value4 = () => (
         </g>
     </svg>
 
+)
+
+export const BehanceIcon = () => (
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-brand-behance"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5" /><path d="M3 12l4.5 0" /><path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1" /><path d="M16 6l3 0" /></svg>
+)
+
+export const LinkedinIcon = () => (
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
 )

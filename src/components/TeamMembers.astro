@@ -1,0 +1,28 @@
+---
+import Member from "./Member.astro"
+import samuel from '../../public/samuel.png'
+import sofia from '../../public/sofia.png'
+import mariana from '../../public/mariana.png'
+import food from '../assets/Asian Food.png'
+
+const samuelRoles = ['UI Designer', 'Documenter', 'Frontend Developer']
+const sofiaRoles = ['UI Designer', 'Documenter']
+const marianaRoles = ['UI Designer', 'Documenter']
+---
+
+<div>
+    <h2 class="font-bold text-6xl">Team Members</h2>
+
+    <ul class="flex flex-col items-center gap-4 mt-12 relative">
+
+        <picture class="absolute -top-16 right-0">
+            <img src={food.src} class="w-[200px]" alt="">
+        </picture>
+
+        <Member roles={sofiaRoles} linkedin="https://www.linkedin.com/in/sof%C3%ADa-ordo%C3%B1ez/" behance="https://www.behance.net/sofiaordoez2" containerClass="rounded-r-2xl" name="Sofia Ordoñez" image={sofia.src} desc="As a UI designer, I participated in the creation of the design system, developing components with animations that improved the interactive experience."/>
+
+        <Member roles={samuelRoles} behance="https://www.behance.net/samuelortiz3" linkedin="https://www.linkedin.com/in/samuel-ortiz-urrea/" containerClass="rounded-l-2xl" className="flex-row-reverse" name="Samuel Ortiz" image={samuel.src} desc="Participated in the creation of the design system, building components that can be reusable and as the frontend developer of the team for the landing page."/>
+
+        <Member roles={marianaRoles} linkedin='https://www.linkedin.com/in/mariana-cuadros' behance="https://www.behance.net/cuadrosmariana" containerClass="rounded-r-2xl" name="Mariana Cuadros" image={mariana.src} desc="Performed high-fidelity prototyping, researched deeply into Rappi's identity and needs, and actively contributed to the documentation to ensure usability."/>
+    </ul>
+</div>

@@ -1,0 +1,31 @@
+---
+const { name, linkedin, behance, desc, image, className, containerClass, roles} = Astro.props
+
+import { LinkedinIcon, BehanceIcon } from "./Icons"
+---
+
+<li class=`flex items-center ${className}`>
+    <picture>
+        <img class="rounded-xl max-h-[400px]" src={image} alt="">
+    </picture>
+
+    <article class=`py-12 px-16 bg-[#EDEFF3] ${containerClass} flex flex-col gap-6 w-[60dvw]`>
+        <strong class="font-bold text-4xl">{name}</strong>
+        <span class="flex gap-2 text-white">
+            {
+                roles.map(role => (
+                    <small class="rounded-full bg-red px-2 py-1">{role}</small>
+                ))
+            }
+        </span>
+        <p class="max-w-xl">{desc}</p>
+        <span class="flex gap-4">
+            <a target="_blank" href={linkedin} class="p-3 rounded-full text-white bg-green transition-colors hover:brightness-110 cursor-pointer">
+                <LinkedinIcon/>
+            </a>
+            <a target="_blank" href={behance} class="p-3 rounded-full text-white bg-green transition-colors hover:brightness-110 cursor-pointer">
+                <BehanceIcon/>
+            </a>
+        </span>
+    </article>
+</li>

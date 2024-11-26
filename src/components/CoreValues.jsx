@@ -27,7 +27,7 @@ export function CoreValues() {
     return (
         <ul className="grid grid-cols-4 gap-12">
             {values.map(({ title, text, icon }) => (
-                <li className="flex flex-col items-center text-center p-8 gap-3 rounded-2xl shadow-lg bg-white">
+                <li key={title} className="flex flex-col items-center text-center p-8 gap-3 rounded-2xl shadow-lg bg-white">
                     <span>
                         {icon}
                     </span>

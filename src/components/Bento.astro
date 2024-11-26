@@ -1,0 +1,73 @@
+---
+import BentoItem from "./BentoItem.astro";
+import mockup from "../assets/componentsMockup.png";
+import icons from "../assets/icons.png";
+import illustrations from "../assets/illustrations.png";
+import burguer from "../assets/Burger.png";
+---
+
+<div
+    class="grid grid-cols-12 grid-rows-[15rem_24rem] gap-4 w-full mt-12 relative"
+>
+    <picture class="absolute w-[200px] -top-28 -right-10">
+        <img src={burguer.src} alt="" />
+    </picture>
+
+    <BentoItem
+        className="bg-gradient-to-b from-green to-[#0EB465] col-span-12 md:col-span-4 lg:col-span-4 flex flex-col gap-4"
+    >
+        <h3 class="text-xl font-semibold">
+            <span class="text-5xl">+40</span>
+            <br />2D and 3D Icons
+        </h3>
+        <picture class="w-[410px]">
+            <img src={icons.src} alt="" />
+        </picture>
+    </BentoItem>
+
+    <BentoItem
+        className="bg-gradient-to-b from-red to-[#BD0B04] col-span-12 md:col-span-4 lg:col-span-4 flex flex-col gap-4"
+    >
+        <h3 class="text-xl font-semibold">
+            <span class="text-5xl">64</span>
+            <br />Illustrations
+        </h3>
+        <picture class="w-[420px] -mt-7">
+            <img src={illustrations.src} alt="" />
+        </picture>
+    </BentoItem>
+
+    <BentoItem
+        className="bg-gradient-to-b from-yellow to-[#C78320] col-span-12 md:col-span-4 lg:col-span-4 flex flex-col justify-between gap-4"
+    >
+        <h3 class="text-xl font-semibold">
+            <span class="text-5xl">3</span>
+            <br />Main Colors
+        </h3>
+        <span class="flex justify-between">
+            <div class="rounded-full aspect-square w-[80px] bg-yellow"></div>
+            <div class="rounded-full aspect-square w-[80px] bg-red"></div>
+            <div class="rounded-full aspect-square w-[80px] bg-green"></div>
+        </span>
+    </BentoItem>
+
+    <BentoItem
+        className="bg-yellow col-span-12 md:col-span-12 lg:col-span-3 flex flex-col gap-4"
+    >
+        <h3 class="text-4xl w-fit">
+            <span class="text-6xl">6 </span><br />Typography Sizes
+        </h3>
+        <p class="text-9xl opacity-35">Aa</p>
+    </BentoItem>
+
+    <BentoItem
+        className="bg-gradient-to-r flex items-center justify-between from-green to-white col-span-12 md:col-span-12 lg:col-span-9"
+    >
+        <h3 class="text-7xl w-fit">
+            <span class="text-9xl">+90</span><br /> Components for your use
+        </h3>
+        <picture class="w-[800px]">
+            <img src={mockup.src} alt="" />
+        </picture>
+    </BentoItem>
+</div>
